@@ -64,6 +64,15 @@ Auth::user()->inRole($role);
 
 // Add role to user
 Auth::user()->addRole($role);
+
+// Remove role to user
+Auth::user()->removeRole($role);
+
+// Remove role to user by slug
+Auth::user()->removeRoleBySlug($role);
+
+// Replaces roles to new roles in user
+Auth::user()->replaceRoles($roles);
 ```
 
 In rare cases, you may need to take users who have permission directly or through a role. To do this, you can use:
